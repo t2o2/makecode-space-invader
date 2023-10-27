@@ -29,15 +29,18 @@
 -   Set the spaceship to initial position, go to `Sprites` and drag `set mySprite position to x 80 y 110`
 -   To move the spaceship, go to `Controller` and drag `move mySprite with buttons` to the workspace. Set `vx` to 100 and `vy` to 0
 
-[On Start Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/on_start.png?raw=true)
+[Initial Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/on_start.png?raw=true)
 
 ----------
 
 #### 4. **Shooting Lasers**
 
--   In `Sprites`, find the `on button A pressed` block and drag it to the workspace.
--   Inside this block, use the `create projectile from sprite` block. This will make your spaceship shoot a laser when the A button is pressed.
+-   In `Controller`, find the `on A button pressed` block and drag it to the workspace.
+-   Inside this block, use the `set projectile to projectile from mySprite with vx vy` block from `Sprites` tab. This will make your spaceship shoot a laser when the A button is pressed.
 -   Design your laser using the sprite editor.
+
+[Projectile Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/projectile.png?raw=true)
+
 
 ----------
 
@@ -49,6 +52,8 @@
 -   Set its velocity to make it move downwards.
 -   Design your alien invaders using the sprite editor.
 
+[Alien Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/invaders.png?raw=true)
+
 ----------
 
 #### 6. **Collisions**
@@ -58,13 +63,19 @@
 -   Set it to detect overlap between a projectile (laser) and an alien.
 -   Inside this block, use the `destroy` block to get rid of both the alien and the laser.
 
+[Collisions Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/collision.png?raw=true)
+
 ----------
 
 #### 7. **Losing the Game**
 
 -   If an alien reaches the bottom, the player should lose.
--   In the same `game loop` where you created the alien, check if the alien's Y position is greater than a certain value (near the bottom).
--   Use the `game over` block from `Game` to end the game if an alien gets too close.
+-   The wall set in the tilemap from initial code will be come the boundary
+-   From `Scene` tab, move `on sprit of kind Player hits wall at location` to the workspace.
+-   Change the kind from `Player` to `Enemy`
+-   Put `game over LOSE` from `Game` tab inside this block to declare the end of the game.
+
+[Enemy Reached Bottom Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/reach_bottom.png?raw=true)
 
 ----------
 
@@ -72,6 +83,8 @@
 
 -   Every time an alien is destroyed by a laser, the player should earn points.
 -   After destroying the alien (in the overlap block from step 6), use the `change score by` block from `Info` to add points.
+
+
 
 ----------
 
