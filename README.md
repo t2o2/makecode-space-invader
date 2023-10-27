@@ -84,7 +84,7 @@
 -   Every time an alien is destroyed by a laser, the player should earn points.
 -   After destroying the alien (in the overlap block from step 6), use the `change score by` block from `Info` to add points.
 
-
+[Score](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/score.png?raw=true)
 
 ----------
 
@@ -92,6 +92,7 @@
 
 -   Click the play button to test your game.
 -   Adjust the speeds, frequencies, and other values to make the game more fun and challenging.
+-   Adding lifes to the player
 
 ----------
 
