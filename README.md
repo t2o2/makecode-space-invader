@@ -16,17 +16,20 @@
 #### 2. **Designing the Background**
 
 -   Click on the `Scene` category.
--   Drag the `set tilemap to (tilemap)` block to the workspace.
--   Click on the tilemap and add walls like [this](https://github.com/t2o2/makecode-space-invader/imgs/wall.png?raw=true) 
+-   Drag the `set tilemap to tilemap` block to the `on start` loop.
+-   Click on the gray tilemap square (the tilemap editor) and add walls like [here](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/wall.png?raw=true) 
 
 ----------
 
 #### 3. **Creating the Player's Spaceship**
 
 -   Click on the `Sprites` category.
--   Drag the `set mySprite to sprite of kind Player` block into the workspace.
+-   Drag the `set mySprite to sprite of kind Player` block into the `on start` loop.
 -   Click on the gray square (the sprite editor). Design your spaceship.
--   To move the spaceship, go to `Controller` and drag `move mySprite with buttons` to the workspace.
+-   Set the spaceship to initial position, go to `Sprites` and drag `set mySprite position to x 80 y 110`
+-   To move the spaceship, go to `Controller` and drag `move mySprite with buttons` to the workspace. Set `vx` to 100 and `vy` to 0
+
+[On Start Code](https://github.com/t2o2/makecode-space-invader/blob/main/imgs/on_start.png?raw=true)
 
 ----------
 
