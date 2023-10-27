@@ -1,5 +1,5 @@
 
-### Space Invaders with MakeCode Arcade: A Tutorial for Kids
+# Space Invaders with MakeCode Arcade
 
 **Objective**: In our game, you'll be the pilot of a spaceship trying to defend Earth from waves of alien invaders. Shoot them down before they reach you!
 
